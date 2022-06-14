@@ -9,7 +9,14 @@
 <body>
     <h1>Students</h1>
     <ul>
-        
+        <% students.forEach(students => { %>
+            <li>
+                <%= students.name %>
+                - 
+                <%= students.major %>
+
+            </li>
+        <%})  %>
     </ul>
 </body>
 </html>
